@@ -18,7 +18,7 @@
     color: $whiteColor;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: fontWeightBlack;
     font-size: 26px;
     // font-size: 44px;
     line-height: 1.61;
@@ -51,7 +51,7 @@
 }
 
 .button-font {
-    font-weight: 700;
+    font-weight: $fontWeightBold;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;

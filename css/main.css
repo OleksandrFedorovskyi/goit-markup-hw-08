@@ -11,6 +11,7 @@
   color: #757575;
   list-style-type: none;
   font-weight: 500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -34,7 +35,9 @@
 
 .logo {
   font-family: "Raleway", sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-style: normal;
+  font-weight: 700;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -44,6 +47,17 @@
 }
 .logo:nth-last-child(3) {
   margin-right: 93px;
+}
+
+.logo-font {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .link-container {
@@ -73,11 +87,12 @@
 }
 
 .header-contacts {
-  display: block;
+  display: inline-block;
   color: #757575;
   margin-top: 32px;
   margin-bottom: 32px;
   list-style-type: none;
+  font-weight: 500;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -140,17 +155,6 @@ body {
   line-height: 1.2;
   text-align: center;
   margin-bottom: 50px;
-}
-
-.logo-font {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 html {
@@ -301,7 +305,7 @@ ul {
   color: #ffffff;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: fontWeightBlack;
   font-size: 26px;
   line-height: 1.61;
   width: 100%;
@@ -370,6 +374,11 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.our-work {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
 .list-content__item {
   display: block;
   position: relative;
@@ -389,6 +398,7 @@ ul {
   align-items: center;
   height: 70px;
   font-weight: 700;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -399,6 +409,7 @@ ul {
 }
 
 .team-card__member {
+  font-weight: 500;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -436,6 +447,14 @@ ul {
   background-color: #f5f4fa;
   margin: 0;
   width: 100%;
+}
+
+.team-card__spec {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 28px;
 }
 
 .clients-section {
@@ -569,6 +588,7 @@ ul {
 
 .subscr-field {
   font-family: "Roboto";
+  font-family: "$fontPrimary";
   padding-left: 15px;
   padding-right: 15px;
   width: 358px;
@@ -596,6 +616,7 @@ ul {
   padding-right: 62px;
   margin-left: 12px;
   font-family: "Roboto";
+  font-family: "$fontPrimary";
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -662,6 +683,8 @@ ul {
   margin-bottom: 12px;
   font-family: "Roboto";
   font-weight: 700;
+  font-family: "$fontPrimary";
+  font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.03em;
@@ -700,6 +723,8 @@ ul {
   margin-bottom: 4px;
   display: block;
   font-family: "Roboto";
+  font-weight: 400;
+  font-family: "$fontPrimary";
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -755,6 +780,8 @@ ul {
 .textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-family: "Roboto";
+  font-weight: 400;
+  font-family: "$fontPrimary";
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -836,6 +863,8 @@ ul {
   padding: 10px 52px;
   margin-top: 30px;
   font-family: "Roboto";
+  font-weight: 700;
+  font-family: "$fontPrimary";
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -926,6 +955,7 @@ ul {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -947,6 +977,7 @@ ul {
 }
 
 .project-name {
+  font-weight: 700;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

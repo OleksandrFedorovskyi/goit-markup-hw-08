@@ -1,11 +1,11 @@
 .header-underline {
     border-bottom: 1px solid lightgrey;
 }
-
 .header-links {
     color: $primaryColor;
     list-style-type: none;
     font-weight: 500;
+     font-weight: $fontWeightMedium;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -14,13 +14,11 @@
     align-items: stretch;
     max-width: 100%;
     height: 80px;
-
     & :hover,
     & :focus {
         color: $accentColor;
     }
 }
-
 .header-group {
     display: flex;
     flex-wrap: nowrap;
@@ -31,17 +29,28 @@
 
 .logo {
     font-family: 'Raleway', sans-serif;
+    font-family: $fontSecondary;
     font-style: normal;
     font-weight: 700;
+    font-weight: $fontWeightBold;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: $accentColor;
     list-style-type: none;
-
     &:nth-last-child(3) {
         margin-right: 93px;
     }
+}
+.logo-font {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: $fontWeightBold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .link-container {
@@ -55,31 +64,28 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .rightside-links {
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
     margin-left: auto;
     padding-left: 0;
-
     &>li:not(:last-of-type) {
         margin-right: 50px;
     }
-
     & a:hover .header-icon,
     & a:focus .header-icon {
         fill: #2196f3;
     }
 }
-
 .header-contacts {
-    display: block;
+    display: inline-block;
     color: $primaryColor;
     margin-top: 32px;
     margin-bottom: 32px;
     list-style-type: none;
     font-weight: 500;
+    font-weight: $fontWeightMedium;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -88,20 +94,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .header-icon {
     position: relative;
     top: 4px;
     margin-right: 10px;
     fill: #757575;
 }
-
 .current-page {
     position: relative;
     color: $accentColor;
     text-decoration: none;
     list-style-type: none;
-
     &::after {
         display: block;
         content: '';

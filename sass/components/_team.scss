@@ -1,5 +1,6 @@
 .team-card__member {
     font-weight: 500;
+    font-weight: $fontWeightMedium;
     font-size: 16px;
     line-height: 1.18;
 
@@ -32,12 +33,18 @@
     left: 1115px;
     top: 1632px;
 }
-
-
 .team-section--backgroundColor {
     display: flex;
     justify-content: center;
     background-color: #f5f4fa;
     margin: 0;
     width: 100%;
+}
+
+.team-card__spec {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-bottom: 28px;
 }

@@ -1,0 +1,39 @@
+body {
+    font-family: roboto, sans-serif;
+    color: $primaryColor;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+.text-decoration {
+    text-decoration: none;
+    color: $titleColor;
+}
+
+.list {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.title {
+    color: $titleColor;
+}
+
+.section-article {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo-font {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}

@@ -1,0 +1,237 @@
+.modal {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    background-color: #ffffff;
+    border-radius: 4px;
+
+}
+
+.modal-body {
+    padding: 40px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.modal-title {
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: $titleColor;
+}
+
+.close-btn {
+    position: fixed;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    background: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    transition: fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $accentColor;
+        border-color: $accentColor;
+        outline: $accentColor;
+    }
+}
+
+
+
+.field {
+    position: relative;
+    width: 100%;
+    overflow-y: hidden;
+
+}
+
+.field-label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $primaryColor;
+}
+
+.field-input {
+    display: block;
+    outline: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    padding-right: 12px;
+    width: 100%;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:focus),
+    .textarea:not(:focus),
+    .subscr-field:not(:focus) {
+        cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: $accentColor;
+    }
+
+    &:hover+svg,
+    &t:focus+svg {
+        fill: $accentColor;
+    }
+}
+
+
+
+
+
+.field-icon {
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill: $titleColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea {
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+    }
+
+    &:focus {
+        border-color: $accentColor;
+        color: $accentColor;
+        outline: $accentColor;
+    }
+}
+
+
+
+
+
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-50%);
+    pointer-events: all;
+
+
+    &:checked+.check-mark-bg+.check-mark {
+        fill: $whiteColor;
+        opacity: 1;
+    }
+
+    &:checked+.check-mark-bg {
+        border-width: 0;
+        background-color: $accentColor;
+    }
+
+    &:focus+.check-mark-bg {
+        border: 1px solid $accentColor;
+    }
+}
+
+.checkbox-input {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.checkbox-label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.check-mark-bg {
+    border: 1px solid $titleColor;
+    border-radius: 2px;
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-agreement {
+    color: $accentColor;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.modal-btn {
+    display: block;
+    padding: 10px 52px;
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    outline: none;
+    background-color: $accentColor;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}

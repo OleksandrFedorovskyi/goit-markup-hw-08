@@ -1,6 +1,9 @@
 .our-work {
     padding-top: 0;
     padding-bottom: 94px;
+        @media (max-width:1199px) {
+        display: none;
+    }
 }
 .list-content__item {
     display: block;

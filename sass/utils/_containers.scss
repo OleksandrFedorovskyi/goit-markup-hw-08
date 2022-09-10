@@ -33,19 +33,12 @@ ul {
     margin: 0 auto;
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-@media screen and (min-width:480px){
-            padding-top: 60px;
-    padding-bottom: 60px;
-    }
-}
+
 
 
 .main-container {
     margin-bottom: 0;
-    width: 100%;
+    
  @media screen and (min-width:480px){
         width: 480px;
     }
@@ -63,16 +56,15 @@ ul {
 }
 
 
-
-
-
-.team-section-container {
-    width: 1200px;
-}
-
-.list-content {
-    // display: flex;
-    // justify-content: center;
-    // justify-content: space-between;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+@media screen and (min-width:480px){
+            padding-top: 60px;
+    padding-bottom: 60px;
+    }
+            @media screen and (min-width:1199) {
+        width: 1200px;
+    }
 
 }

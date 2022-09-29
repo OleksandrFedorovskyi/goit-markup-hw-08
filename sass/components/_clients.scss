@@ -5,6 +5,12 @@
     justify-content: center;
     flex-wrap: nowrap;
     gap: 30px;
+    @media screen and (max-width: 768px)  {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
 }
 
 .clients-icon {
@@ -33,9 +39,25 @@
         border-color: $accentColor;
         outline: none;
     }
+       @media screen and (max-width: 480px) {
+      width: 210px ;
 }
+     @media screen and (min-width: 768px) {
+        width: 226px;
+     }
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+     }
+}
+.client-link {
+    @media screen and (max-width: 480px) {
+      
+} }
 
 .clients-container {
+    margin: 0;
+    padding: 0;
+     @media screen and (min-width: 1200px) {
     padding-top: 50px;
     padding-bottom: 94px;
-}
+}}

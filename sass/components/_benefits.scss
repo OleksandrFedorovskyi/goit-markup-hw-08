@@ -20,24 +20,55 @@
     width: 70px;
     height: 70px;
 }
-.benefits__grid {
-    @media screen and (min-width:481px) , (max-width:1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px; }
-        @media screen and (min-width:1200px) {
-            flex-wrap: nowrap;
-        }
-}
-.benefits__list {
-@media screen and (min-width:481px) , (max-width:1199px) {
 
+.benefits__grid {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (max-width:767px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+    @media screen and (min-width:768px) {
+       width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     // flex-basis: calc(( 100% - 2 * 30) / 2);
     // margin: 30px;
     //     --gap: 30px;
     // --columns: 2;
     // width: calc((100% - (var(--columns) - 1)*var(--gap))/var(--columns));
 }
+        @media screen and (min-width:1200px) {
+               flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 1200px;
+
+    margin: 0 auto;
+        }
+}
+.benefits__list {
+ @media screen and (max-width:767px)  {
+      width: 450px;
+      padding-bottom: 30px;
+}
+
+@media screen and (min-width:768px) {
+    width: 354px;
+    display: block;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+    @media screen and (min-width:1200px) {
+        width: 270px;
+        gap: 30px;
+    }
+
 }
 .icon-container {
     // width: 270px;
@@ -73,26 +104,33 @@
 }
 
 
-// .benefits-container {
-//         @media screen and (min-width:1199) {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     row-gap: 30px;
-//     width: 1200px;
-//     }
-// }
+.benefits-container {
+
+        @media screen and (min-width:1199px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 30px;
+    width: 1200px;
+    
+    }
+}
 .benefits {
     // display: flex;
     // flex-direction: row;
     // justify-content: center;
     // row-gap: 30px;
     // width: 1200px;
-    @media screen and (min-width:1199px) {
-    padding-left: 15px;
+    @media screen and (min-width:480px) {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+        padding-left: 15px;
     padding-right: 15px;
+}
+    @media screen and (min-width:1199px) {
+
     margin: 0 auto;
     width: 1200px;
     }
-
 }

@@ -7,7 +7,10 @@
   border-bottom: 1px solid lightgrey;
 }
 
-.header-links {
+.header-links-container :hover, .header-links-container :focus {
+  color: #2196f3;
+}
+.header-links-container .header-links {
   color: #757575;
   list-style-type: none;
   font-weight: 500;
@@ -20,20 +23,21 @@
   align-items: stretch;
   max-width: 100%;
   height: 80px;
+  margin: 0;
 }
-.header-links :hover, .header-links :focus {
-  color: #2196f3;
+@media screen and (max-width: 767px) {
+  .header-links-container .header-links {
+    display: none;
+  }
 }
-
-.header-group {
+.header-links-container .header-group {
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
   width: 100%;
   align-items: center;
 }
-
-.logo {
+.header-links-container .logo {
   font-family: "Raleway", sans-serif;
   font-family: "Raleway", Arial, sans-serif;
   font-style: normal;
@@ -45,22 +49,20 @@
   color: #2196f3;
   list-style-type: none;
 }
-.logo:nth-last-child(3) {
+.header-links-container .logo:nth-last-child(3) {
   margin-right: 93px;
 }
-
-.logo-font {
+.header-links-container .logo-font {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-
-.link-container {
+.header-links-container .link-container {
   height: 100%;
   text-align: center;
   display: flex;
@@ -71,22 +73,22 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.rightside-links {
+.header-links-container .rightside-links {
   display: flex;
   justify-content: flex-end;
   flex-wrap: nowrap;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
-.rightside-links > li:not(:last-of-type) {
+.header-links-container .rightside-links > li:not(:last-of-type) {
   margin-right: 50px;
 }
-.rightside-links a:hover .header-icon, .rightside-links a:focus .header-icon {
+.header-links-container .rightside-links a:hover .header-icon, .header-links-container .rightside-links a:focus .header-icon {
   fill: #2196f3;
 }
-
-.header-contacts {
+.header-links-container .header-contacts {
   display: inline-block;
   color: #757575;
   margin-top: 32px;
@@ -102,21 +104,24 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-icon {
+@media screen and (max-width: 767px) {
+  .header-links-container .header-contacts {
+    display: none;
+  }
+}
+.header-links-container .header-icon {
   position: relative;
   top: 4px;
   margin-right: 10px;
   fill: #757575;
 }
-
-.current-page {
+.header-links-container .current-page {
   position: relative;
   color: #2196f3;
   text-decoration: none;
   list-style-type: none;
 }
-.current-page::after {
+.header-links-container .current-page::after {
   display: block;
   content: "";
   width: 100%;

@@ -1,8 +1,15 @@
 .header-underline {
     border-bottom: 1px solid lightgrey;
 }
+.header-links-container {
+
+
+    & :hover,
+    & :focus {
+        color: $accentColor;
+}
 .header-links {
-    color: $primaryColor;
+        color: $primaryColor;
     list-style-type: none;
     font-weight: 500;
      font-weight: $fontWeightMedium;
@@ -14,10 +21,11 @@
     align-items: stretch;
     max-width: 100%;
     height: 80px;
-    & :hover,
-    & :focus {
-        color: $accentColor;
+    margin: 0;
+        @media screen and (max-width:767px) {
+        display: none;
     }
+
 }
 .header-group {
     display: flex;
@@ -25,6 +33,7 @@
     justify-content: left;
     width: 100%;
     align-items: center;
+    
 }
 
 .logo {
@@ -49,8 +58,8 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .link-container {
@@ -69,6 +78,8 @@
     justify-content: flex-end;
     flex-wrap: nowrap;
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 0;
     &>li:not(:last-of-type) {
         margin-right: 50px;
@@ -93,6 +104,9 @@
     transition: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 .header-icon {
     position: relative;
@@ -116,4 +130,4 @@
         border-radius: 2px;
         background-color: $accentColor;
     }
-}
+}}
